@@ -9,9 +9,10 @@
 <body>
     home sweet home.
     {% if user.is_authenticated %}
-        if u see this secret content u are logged in. click <a href="/logout">here</a> to log out.
+        if u see this secret content u are logged in.
+        <button onclick="location.href = '/logout';">Log out</button>
     {% else %}
         click <a href="/login">here</a> to log in.
     {% endif %}
 </body>
-</html>
+</html> 
